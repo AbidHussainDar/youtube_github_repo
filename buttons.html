@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button | HTML</title>
+    <style>
+        .btn_one{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn_two{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #de5a03;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 40px 30px 5px rgba(237, 5, 5, 0.2);
+        }
+        .btn_three{
+            padding: 10px 20px;
+            font-size: 16px;
+           background: linear-gradient(180deg, #00ff2f, #050505,  #ff00d4);
+            color: white;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .btn_four{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: transparent;
+            color: rgb(4, 4, 4);
+            border: 1px solid #050505;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn_five{
+            padding: 10px 20px;
+            font-size: 16px;
+            background: linear-gradient(45deg, #0400ff, #ff00d4);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn_five:hover{
+            background: linear-gradient(45deg, #ff00d4, #0400ff);
+            /* font-size: 30px; */
+            box-shadow: 0px 0px 10px rgba(255, 0, 212, 0.5);
+        }
+        .btn_four:hover{
+            background-color: #050505;
+            color: white;
+            border: 1px solid #050505;
+            box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.5);
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="btn_one">Click me</button>
+    <button class="btn_two" type="submit">Submit Button</button>
+    <button class="btn_three" type="reset">Reset Button</button>
+    <button class="btn_four" type="button">Button</button>
+    <input  class="btn_five" type="button" value="Input Button">
+
+</body>
+</html>

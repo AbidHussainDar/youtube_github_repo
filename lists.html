@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Lists</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000;
+            color: #fff;
+        }
+        ul, ol, dl{
+            padding: 20px;
+            background-color: azure;
+            color: #000;
+            width: 50%;  
+            padding: 30px; 
+        }
+        ul li{
+            list-style-type: square;
+            list-style-position: outside;
+            background-color: blue;
+            list-style-image: url(https://www.w3schools.com/css/sqpurple.gif);
+            margin: 10px;
+            padding: 10px;
+        }
+        ol li{
+            list-style-type:lower-greek;
+             list-style-position: inside;
+             background: red;
+             padding:0 30px;
+        }
+        dt{
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        dd{
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Unordered List -->
+     <h5>My skills</h5>
+     <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>Css</li>
+        <li>Vue js</li>
+        <li>Angular</li>
+     </ul>
+     <!-- Ordered List -->
+     <h5>My hobbies</h5>
+     <ol>
+        <li>Reading</li>
+        <li>Writing</li>
+        <li>Swimming</li>
+        <li>Cooking</li>
+        <li>Watching Movies</li>
+     </ol>
+
+     <!-- Description List -->
+     <h5>My Education</h5>
+     <dl>
+        <dt>Bachelor of Science in Computer Science</dt>
+        <dd>University of Example, 2020 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</dd>
+        <dt>Master of Science in Software Engineering</dt>
+        <dd>University of Example, 2022</dd>
+     </dl>
+</body>
+</html>

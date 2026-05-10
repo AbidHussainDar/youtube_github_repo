@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .section-header {
+    position: sticky;
+    top: 0;
+    background: gold;
+    padding: 10px;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    display: block;    /* block-level */
+    width: 25%;
+    background: #f0f0f0;
+    padding: 10px;
+  }
+
+  .content {
+    display: inline-block;
+    width: 70%;
+  }
+
+  .hidden-ad {
+    display: none;     /* hides an element */
+  }
+</style>
+</head>
+<body>
+
+<a href="#" class="back-to-top">🔝 Top</a>
+
+<div class="section-header">🌟 Hot Topics (Sticky)</div>
+
+<div class="flex-container">
+  <div class="sidebar">
+    <h3>About Me (display: block)</h3>
+    <p>This takes full width inside the sidebar.</p>
+  </div>
+  <div class="content">
+    <h3>Main Article (display: inline-block)</h3>
+    <p>Scroll down to see the sticky header and fixed button.</p>
+    <p>... (add more content to see scrolling) ...</p>
+  </div>
+</div>
+
+<div class="hidden-ad">This ad is hidden (display: none)</div>
+
+</body>
+</html>

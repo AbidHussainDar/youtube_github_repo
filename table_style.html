@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Style</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ededed;
+            font-family: sans-serif;
+        }
+
+        table{
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 7px;
+            box-shadow: 2px 2px 10px rgba(40, 40, 40, 0.1);
+        }
+        table, th, td{
+            /* border: 1px solid #000; */
+            border-collapse: collapse;
+        }
+        th{
+            padding: 10px;
+        }
+        th, td{
+           
+           
+            text-align: center;
+        }
+        thead{
+            border-radius: 7px 7px 0 0;
+            background-color: #42a5f5;
+            color: #fff;
+        }
+        th:first-child{
+            border-radius: 7px 0px 0 0;
+        }
+        th:last-child{
+            border-radius: 0px 7px 0 0;
+        }
+        td img{
+            border-radius: 50%;
+        }
+        tr td{
+            border: 1px solid #e0e0e0;
+          padding: 7px;
+        }
+        tr:hover{
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        thead tr:hover{
+            background-color: #42a5f5;
+            cursor: default;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>#</th>
+        <th>Profile Pic</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Phone</th>
+        <th>Occupation</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <img
+              src="https://randomuser.me/api/portraits/men/1.jpg"
+              alt="Profile Pic"
+              width="30"
+            />
+          </td>
+          <td>John Doe</td>
+          <td>30</td>
+          <td>New York</td>
+          <td>NY</td>
+          <td>123-456-7890</td>
+          <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <img
+                src="https://randomuser.me/api/portraits/men/2.jpg"
+                alt="Profile Pic"
+                width="30"
+                />
+            </td>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+            <td>CA</td>
+            <td>098-765-4321</td>
+            <td>Graphic Designer</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <img
+                src="https://randomuser.me/api/portraits/women/1.jpg"
+                alt="Profile Pic"
+                width="30"
+                />
+            </td>
+            <td>Jane Doe</td>
+            <td>28</td>
+            <td>Chicago</td>
+            <td>IL</td>
+            <td>555-123-4567</td>
+            <td>Marketing Manager</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <img
+                src="https://randomuser.me/api/portraits/women/2.jpg"
+                alt="Profile Pic"   
+                width="30"
+                />
+            </td> 
+            <td>Emily Johnson</td>  
+            <td>32</td>
+            <td>Houston</td>
+            <td>TX</td>
+            <td>444-987-6543</td>
+            <td>Data Analyst</td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <img
+                src="https://randomuser.me/api/portraits/men/3.jpg"
+                alt="Profile Pic"
+                width="30"
+                />
+            </td>
+            <td>Michael Brown</td>
+            <td>35</td>
+            <td>Phoenix</td>
+            <td>AZ</td>
+            <td>333-222-1111</td>
+            <td>Project Manager</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                <img
+                src="https://randomuser.me/api/portraits/women/3.jpg"
+                alt="Profile Pic"   
+                width="30"
+                />
+            </td> 
+            <td>Sarah Davis</td>  
+            <td>29</td>
+            <td>Philadelphia</td>
+            <td>PA</td>
+            <td>222-333-4444</td>
+            <td>HR Specialist</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

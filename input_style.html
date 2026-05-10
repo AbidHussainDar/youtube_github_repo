@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input style</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: sans-serif;
+        gap: 20px;
+      }
+      input{
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #fff6f6;
+      }
+      label{
+        font-size: 18px;
+        /* font-weight: bold; */
+        color: #333;
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+        accent-color: #ff6b6b;
+        width: 20px;
+        height: 20px;
+    }
+     input[type="radio"] {
+        width: auto;
+        margin-right: 10px;
+        accent-color: #ff6b6b;
+        width: 20px;
+        height: 20px;
+    }
+        
+    </style>
+  </head>
+  <body>
+    <div>
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+    </div>
+     <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email" />
+    </div>
+     <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" />
+    </div>
+    <div>
+        <label for="">
+            <input type="checkbox">
+            Remember me
+        </label>
+    </div>
+    <div>
+        <label for="">Gender</label>
+        <label for="">
+            <input type="radio" name="gender">
+                <span>Male</span>
+
+            <input type="radio" name="gender" >
+            <span>Female</span>
+        </label>
+    </div>
+  </body>
+</html>

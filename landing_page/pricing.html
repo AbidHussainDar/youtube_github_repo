@@ -1,0 +1,165 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fixed vs Sticky</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: #f5f5f5;
+    }
+
+    /* FIXED BUTTON */
+    .fixed-btn{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* STICKY NAVBAR */
+    nav{
+      position: sticky;
+      top: 0;
+      background-color: #663399;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      height: 100vh;
+      background: linear-gradient(to right, #7331b4, #8d40db);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1{
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .hero p{
+      max-width: 700px;
+      line-height: 1.7;
+      font-size: 20px;
+    }
+
+    /* CONTENT */
+    .content{
+      padding: 60px 100px;
+    }
+
+    .card{
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+      margin-bottom: 15px;
+      color: #663399;
+    }
+
+    .card p{
+      line-height: 1.8;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED BUTTON -->
+  <div class="fixed-btn">
+    WhatsApp
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Fixed vs Sticky</h1>
+    <p>
+      Scroll this page to see the difference between fixed and sticky positioning in CSS.
+    </p>
+  </section>
+
+  <!-- STICKY NAVBAR -->
+  <nav>
+    Sticky Navbar
+  </nav>
+
+  <!-- CONTENT -->
+  <section class="content">
+
+    <div class="card">
+      <h2>Position Fixed</h2>
+      <p>
+        The WhatsApp button at the bottom-right corner is using 
+        <strong>position: fixed</strong>. 
+        It stays visible all the time even while scrolling.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Position Sticky</h2>
+      <p>
+        This navbar is using 
+        <strong>position: sticky</strong>. 
+        It behaves normally at first, then sticks to the top when scrolling.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Real World Example</h2>
+      <p>
+        Websites like YouTube use sticky navbars while WhatsApp support buttons use fixed positioning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Practice More</h2>
+      <p>
+        Try changing sticky to fixed and observe the behavior difference.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Bab-ul-code</h2>
+      <p>
+        Learn HTML, CSS, JavaScript, Vue, Tailwind, Bootstrap and AI with practical examples.
+      </p>
+    </div>
+
+  </section>
+
+</body>
+</html>
+```

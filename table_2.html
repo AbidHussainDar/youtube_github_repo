@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table | Html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #e3e3e3;
+        font-family: sans-serif;
+      }
+      table {
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      h3 {
+        text-align: center;
+        margin: 20px 0;
+        color: rgb(237, 65, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ColSpan -->
+    <h3>Col Span</h3>
+    <table>
+      <thead>
+        <th>S.no</th>
+        <th colspan="2">Full name</th>
+        <th>Age</th>
+        <th colspan="2">Address</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>46</td>
+          <td>Srinagar</td>
+          <td>Jammu and kashmir</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane</td>
+          <td>Smith</td>
+          <td>45</td>
+          <td>Srinagar</td>
+          <td>Jammu and kashmir</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Row Span -->
+    <h3>Row Span</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>20</td>
+          <td rowspan="2">10th Grade</td>
+          <td>Math</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>19</td>
+          <!-- <td>10th Grade</td> -->
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Emily Johnson</td>
+          <td>21</td>
+          <td rowspan="4">11th Grade</td>
+          <td>History</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Michael Brown</td>
+          <td>22</td>
+          <td>Geography</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Sarah Davis</td>
+          <td>20</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>David Wilson</td>
+          <td>19</td>
+          <td>Physics</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- table column group -->
+
+    <h3>Table Column Group</h3>
+    <table>
+        <thead>
+            <colgroup>
+                <col span="2" style="background-color: rgb(29, 112, 140);">
+                <col span="2" style="background-color: rgb(141, 216, 10);">
+                <col span="1" style="background-color: rgb(10, 27, 216);">
+            </colgroup>
+
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>10th Grade</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>19</td>
+                <td>10th Grade</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emily Johnson</td>
+                <td>21</td>
+                <td>11th Grade</td>
+                <td>History</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive | Breakpoints</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f1f1f1;
+        }
+        .container{
+            width: 50%;
+            background-color: rgb(203, 248, 1);
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        .card{
+            width: 50%;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        }
+        .card button{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgb(0, 255, 0);
+            border: none;
+            color: rgb(8, 8, 8);
+            cursor: pointer;
+        }
+        @media(min-width:1200px){
+            .container{
+                background-color: rgb(208, 0, 142);
+                width: 100%;
+                text-align: center;
+               
+            }
+            h1{
+                font-size: 60px;
+            }
+        }
+
+        @media(max-width:1024px){
+            .container{
+                background-color: rgb(14, 32, 231);
+                width: 100%;
+                text-align: center;
+               
+            }
+            h1{
+                font-size: 30px;
+            }
+                .card{
+                    width: 80%;
+                    font-size: 17px;
+                    
+                }
+        }
+        @media(max-width:768px){
+            .container{
+                background-color: rgb(2, 10, 101);
+                width: 100%;
+                text-align: center;
+               
+            }
+            h1{
+                font-size: 30px;
+            }
+            .card{
+                width: 80%;
+                font-size: 17px;
+                
+            }
+            .card button{
+                width: 100%;
+                margin: 10px auto;
+                text-align: center;
+
+        }
+    }
+
+        @media(max-width:480px){
+            .container{
+                background-color: red;
+                width: 90%;
+                text-align: center;
+               
+            }
+            h1{
+                font-size: 20px;
+            }
+            .card{
+                width: 90%;
+            }
+            .card button{
+                width: 100%;
+            }
+        }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive | Breakpoints</h1>
+    </div>
+
+    <div class="card">
+        <h1>Card</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        <button>Read More</button>
+    </div>
+</body>
+</html>
